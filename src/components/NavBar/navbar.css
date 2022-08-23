@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ .navbar{
+    display: flex;
+    background-color: #2e2d3d;
+    color: #fff;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+ }
+ .brand{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: .5rem;
+ }
+ .navbar-links ul{
+    display: flex;    
+ }
+ .navbar-links li{
+    list-style: none;
+ }
+ .navbar-links li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
+    display: block;
+ }
+ .navbar-links li:hover{
+    background-color: #949885;
+ }
+ .toggle-btn{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+ }
+ .toggle-btn .bar{
+    height: 4px;
+    width: 100%;
+    background-color: #949885;
+    border-radius: 10px;    
+ }
+
+ @media (max-width: 425px){
+    .toggle-btn{
+        position: absolute;
+        top: .75rem;
+        right: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 20px;
+     }
+
+     .navbar-links{
+        display: none; 
+        width: 100%;    
+     }
+     .navbar-links-active{
+        display: flex;
+     }
+     .navbar-links ul{
+        width: 100%;
+        flex-direction: column;
+     }
+     .navbar-links ul li{
+        text-align: center;
+
+     }
+     .navbar-links ul li a {
+        padding: .5rem 1rem;
+     }
+
+     .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+     }
+ }
