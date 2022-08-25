@@ -1,8 +1,11 @@
 import React from "react";
-import './navbar.css'
+import './navBar.css';
+import CartWidget from "../cartWidget/CartWidget";
+import Logo from '../../images/logo.png';
+
 
 const NavBar = () => {
-   /*  let toggleButton = document.getElementsByClassName('toggle-btn')[0];
+    /* let toggleButton = document.getElementsByClassName('toggle-btn')[0];
     let navbarLink = document.getElementsByClassName('navb-links')[0];
 
     toggleButton.addEventListener('click', () => {
@@ -11,7 +14,7 @@ const NavBar = () => {
 
     return(
         <nav className='navbar'>
-            <div className="brand">Book'Loves</div>
+            <div className="brand"><img src={Logo} alt="" />Book'Loves</div>
             <a href=" " className="toggle-btn">
                     <span className="bar"></span>
                     <span className="bar"></span>
@@ -21,9 +24,9 @@ const NavBar = () => {
                 <ul>
                     <li><a href=" ">Inicio</a></li>
                     <li><a href=" ">Categorias</a></li>
-                    <li><a href=" ">Comprar</a></li>
+                    <li><CartWidget /></li>                  
                 </ul>
-            </div>
+            </div>            
         </nav>        
     )
 }
