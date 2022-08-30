@@ -1,7 +1,17 @@
 .CartIcon{
     display: flex;
-    width: 60px;
+    width: 45px;
     height: 35px;
     justify-content: center;
     align-items: center;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin: 0 5px;
 }
+
+@media (max-width: 425px){
+    .CartIcon {
+        margin: 0;
+    }
+}   

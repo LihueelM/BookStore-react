@@ -49,6 +49,8 @@
     justify-content: space-between;
     width: 30px;
     height: 20px;
+    background-color: transparent;
+    border: none;
  }
  .toggle-btn .bar{
     height: 4px;
@@ -68,28 +70,33 @@
         width: 30px;
         height: 20px;
      }
-
      .navbar-links{
-        display: none; 
-        width: 100%;    
+         display: none; 
+         width: 100%;  
      }
      .navbar-links-active{
-        display: flex;
+         display: block;
+         width: 100%;
      }
-     .navbar-links ul{
-        width: 100%;
-        flex-direction: column;
+     .navbar-links-active ul{
+         display: flex;
+         list-style: none;      
+         width: 100%;
+         flex-direction: column;
      }
-     .navbar-links ul li{
-        text-align: center;
-
+     .navbar-links-active li{
+         width: 100%;
+         padding: 6px 15px; 
+         background-color: #88939a;  
      }
-     .navbar-links ul li a {
-        padding: .5rem 1rem;
-     }
-
+     .navbar-links-active li a{
+      text-decoration: none;
+      color: #fff ;
+      font-weight: 600;
+      font-size: 18px;
+  }     
      .navbar{
-        flex-direction: column;
-        align-items: flex-start;
+         flex-direction: column;
+         align-items: flex-start;
      }
  }

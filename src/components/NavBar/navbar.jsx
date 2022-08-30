@@ -1,29 +1,24 @@
-import React from "react";
-import './navBar.css';
+import React, { useState } from "react";
+import './NavBar.css';
 import CartWidget from "../cartWidget/CartWidget";
 import Logo from '../../images/logo.png';
 
 
-const NavBar = () => {
-    /* let toggleButton = document.getElementsByClassName('toggle-btn')[0];
-    let navbarLink = document.getElementsByClassName('navb-links')[0];
-
-    toggleButton.addEventListener('click', () => {
-        navbarLink.classList.toggle('active');
-    }) */
+const NavBar = () => {    
+    const [openBar , setOpenBar] = useState(false)
 
     return(
         <nav className='navbar'>
             <div className="brand"><img src={Logo} alt="" />Book'Loves</div>
-            <a href=" " className="toggle-btn">
+            <button className="toggle-btn" onClick={() => setOpenBar(!openBar)} >
                     <span className="bar"></span>
                     <span className="bar"></span>
                     <span className="bar"></span>
-            </a>
-            <div className="navbar-links">                
+            </button>
+            <div className={`${openBar ? 'navbar-links-active' : 'navbar-links'}`}>                
                 <ul>
                     <li><a href=" ">Inicio</a></li>
-                    <li><a href=" ">Categorias</a></li>
+                    <li><a href=" ">Categorias</a></li> {/* dropdown */}
                     <li><CartWidget /></li>                  
                 </ul>
             </div>            
