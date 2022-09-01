@@ -3,7 +3,6 @@ import './App.css';
 import ItemListContainer from './components/containers/ItemListContainer';
 import { Fragment } from 'react';
 
-
 function App() {
   return (
     <Fragment>
