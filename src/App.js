@@ -7,7 +7,7 @@ function App() {
   return (
     <Fragment>
         <NavBar />
-        <ItemListContainer greeting={`turip turip ip ip turip ip. Se venden libro baratos y bonitos`} />
+        <ItemListContainer greeting={`Recomendados`} />
     </Fragment>
   );
 }

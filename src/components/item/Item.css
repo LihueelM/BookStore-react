@@ -3,13 +3,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 200px;    
+    width: 235px;
     background-color: #bdb9b7;
-    border-radius: 0 0 10px 10px ;
+    border-radius: 10px ;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.55);
+    transition: 0.2s all ease-in;
+}
+.container-item-counts:hover{
+    scale: 1.02;
 }
 .item-name{
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 600;
     padding: 3px 3px;
     width: 100%;
     text-align: center;
@@ -50,16 +56,18 @@
 .btn-carrito{
     border: 1px solid #bdb9b7;
     width: 100%;
-    height: 36px;
+    height: 50px;
     background-color: #eceff1;
     font-size: 16px;
     border-radius: 0 0 10px 10px ;
 
 }
 .btn-carrito:hover{
-    background-color: #efebe9;
+    background-color: #fbcfb9;
     color: #212121;
 }
 .img-card{
     width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0 0 ;
 }
