@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import './NavBar.css';
 import CartWidget from "../cartWidget/CartWidget";
 import Logo from '../../images/logo.png';
+import { Link } from "react-router-dom";
 
 
 const NavBar = () => {    
@@ -17,8 +18,8 @@ const NavBar = () => {
             </button>
             <div className={`${openBar ? 'navbar-links-active' : 'navbar-links'}`}>                
                 <ul>
-                    <li><a href=" ">Inicio</a></li>
-                    <li><a href=" ">Categorias</a></li> {/* dropdown */}
+                    <li><Link to='/' >Inicio</Link ></li>
+                    <li><Link to='/detail'>Categorias</Link ></li> {/* dropdown */}
                     <li><CartWidget /></li>                  
                 </ul>
             </div>            

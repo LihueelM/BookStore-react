@@ -1,9 +1,9 @@
 import React, { Fragment } from "react";
 import './ItemListContainer.css'
-import { products } from "../data/products";
+import { products } from "../../data/products";
 import { useState } from "react";
 import { useEffect } from "react";
-import ItemList from "../itemList/ItemList";
+import ItemList from "../../itemList/ItemList";
 
 const ItemListContainer = ({greeting}) => {
      
