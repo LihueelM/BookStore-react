@@ -4,10 +4,13 @@
     height: 35px;
     justify-content: center;
     align-items: center;
-    color: #fff;
-    border: 1px solid #fff;
+    color: #967E76;
     border-radius: 5px;
     margin: 0 5px;
+    cursor: pointer;
+}
+.CartIcon:hover{
+    background-color: #D7C0AE;
 }
 
 @media (max-width: 425px){
