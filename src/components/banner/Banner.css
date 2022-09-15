@@ -1,18 +1,12 @@
 .banner-container{
-   align-self: center;
-   justify-self: center;
-   display: flex;
-   flex-direction: column;
-   margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
 }
-
 .banner-img{
-    border-radius: 16px;
-}
-
-.about-us{
-    text-align: center;
-    font-size: 26px;
-    font-weight: 600;
-    width: 1200px;
+    display: block;
+    margin: auto 0;
+    width: 96%;
 }

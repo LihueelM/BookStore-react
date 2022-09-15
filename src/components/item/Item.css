@@ -13,16 +13,16 @@
     margin: 32px;
     border-radius: 10px;
     backdrop-filter: blur(20px);
-    background-color: #D7C0AE;
     justify-content: space-evenly;
     transition: 0.1s all ease-out;
     cursor: pointer;
 }
 .container-card:hover{
-    transform: scale(1.01);
+    transform: scale(1.02); 
+    box-shadow: 0px 6px 15px -5px rgba(0,0,0,0.53);  
 }
 .img-card{
-    width: 160px;
+    max-width: 240px;
     height: 200px;
     padding: 8px;
     border-radius: 10px;
@@ -30,15 +30,13 @@
 .title-card{
     padding: 2px;
     font-size: 18px;
-    color: #fff;
     text-align: center;
 }
 .description-card{
     font-size: 12px;
-    color: #fff;
     padding: 2px;
 }
 .price-card{
-    color: #fff;
-    font-size: 18px;
+    font-size: 22px;
+    font-weight: 600;
 }

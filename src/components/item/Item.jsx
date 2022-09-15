@@ -14,7 +14,7 @@ const Item = ({item}) => {
             <div className="container-card" onClick={enlace}>                
                 <img className="img-card" src={item.image} alt={item.key} />                                
                 <h2 className="title-card">{item.title}</h2>
-                <p className="price-card">Price: ${item.price}</p>
+                <p className="price-card">${item.price}</p>
             </div>
         </Fragment>
     )
