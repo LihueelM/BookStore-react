@@ -16,6 +16,7 @@
     justify-content: space-evenly;
     transition: 0.1s all ease-out;
     cursor: pointer;
+    background-color: #fff;
 }
 .container-card:hover{
     transform: scale(1.02); 

@@ -1,12 +1,15 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import './NavBar.css';
 import CartWidget from "../cartWidget/CartWidget";
 import Logo from '../../images/triangle.png';
 import { Link } from "react-router-dom";
+import { Shop } from "../../context/ShopProvider";
 
 
 const NavBar = () => {    
     const [openBar , setOpenBar] = useState(false)
+    const value = useContext(Shop)
+    console.log(value)
 
     return(
         <nav className='navbar'>
