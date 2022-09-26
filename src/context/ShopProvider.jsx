@@ -12,14 +12,16 @@ const ShopProvider = ({children}) => {
         if(productoRepetido){
             const carritoModificado = cart.map(product => {
                 if(product.id === item.id){
-                    product.quantity += item.quantity
+                    product.quantity = product.quantity += item.quantity
+                    console.log(product.price)
                     return product
                 }
                 return product
             })
             console.log(carritoModificado)
         }else{
-            const nuevoCarrito = [...cart, item]
+            
+            const nuevoCarrito = [...cart, item]            
             setCart(nuevoCarrito)
         } 
     }
@@ -36,10 +38,8 @@ const ShopProvider = ({children}) => {
     const removeItem = (item) => {
         const coincidencia = isInCart(item.id)
         if(coincidencia){
-            const itemAEliminar = cart.find(product => product.id === item.id)
-            const index = cart.indexOf(itemAEliminar)
-            cart.splice(index,1)
-            console.log(cart)        
+            const itemAEliminar = cart.filter(producto => producto !== item )
+            setCart(itemAEliminar);    
         }
         else{
             console.log('No se encuentra el item en el carrito')

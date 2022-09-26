@@ -29,15 +29,26 @@ const ItemDetail = ({producto}) => {
     return(
         <>
             <div className="container-item-detail">
-                <div className="container-image">
-                  <img className="img-detail" src={producto.image} alt="" />
-                </div>
-                <div className="container-info">
+                {/* Container con informacion del producto y compra */}
+                <div className="container-producto">
                     <h2 className="title-detail">{producto.title}</h2>
-                    <h5 className="price-detail">${producto.price} </h5>
-                    <h5 className="description-detail" >{producto.description}</h5>
+                    <img className="img-detail" src={producto.image} alt="" />
+                    <div className="opciones">
+                        <div className="fisico">
+                            <h3>OPCIONES</h3>
+                            <span>Version</span>
+                            <span>Precio</span>
+                        </div>                
+                        <div className="digital">
+                            <span>Fisico</span>
+                            <span>{producto.price}</span>
+                        </div>                        
+                    </div>
+                    <button>AGREGAR AL CARRITO</button>
                 </div>
-                <div className="container-action">
+                {/* Container con informacion extra del producto */}
+                <div className="container-info">
+                    <h5 className="description-detail" >{producto.description}</h5>
                     {
                         qty ? (
                             <button onClick={finalizarCompra}> finalizar compra </button>
@@ -48,8 +59,7 @@ const ItemDetail = ({producto}) => {
                     }
                     <button onClick={limpiarCarrito}>Limpiar Carrito</button>
                     <button onClick={eliminarItem}>eliminar Item</button>
-                </div>
-                    
+                </div>                   
                 
             </div>
         </>

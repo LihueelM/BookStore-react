@@ -1,0 +1,22 @@
+.container-cart-final{  
+    margin-top: 3rem;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+.tr-item-row{
+    background-color: #000;
+    height: 45px;
+    color: #fff;
+}
+.tr-item-row th{
+    padding: 12px;    
+}
+.tr-item td img{
+    max-width: 60px;
+}
+table{
+    width: 80%;
+}

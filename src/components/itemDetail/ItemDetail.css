@@ -1,38 +1,38 @@
 .container-item-detail{
-    display: flex;
-    max-width: 850px;
-    height: 500px;
-    border-radius: 4px;
-    align-self: center;
-    justify-self: center;
-    padding: 25px 0 0 25px;
-    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.5);
-    margin: 30px 0 30px 0;
-    background-color: #fff;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 50%  ;
+    font-family: 'Oswald', sans-serif;
 }
-.img-detail{
-    max-width: 380px;
-    max-height: 400px;
-    padding-right: 20px;
-
-}
-.container-info{
+/* Container con fotos e informacion comercial del producto */
+.container-producto{
     display: flex;
     flex-direction: column;
-    max-width: 250px;
+    padding: 60px 0 0 60px;    
 }
 .title-detail{
+    font-size: 26px;    
+}
+.img-detail{
+    max-width: 300px;
+}
+.opciones{
+    display: flex;
+    flex-direction: column;
+    margin: 6px;
+}
+.container-producto button{
+    width: 200px;
+    font-family: 'Oswald', sans-serif;
+    background-color:#FFD460;
     font-size: 22px;
-    font-weight: 500;
-    margin-bottom: 8px;
+    height: 36px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
 }
-.price-detail{
-    font-size: 36px;
-    font-weight: 350;
-    margin-bottom: 8px;
+.container-producto button:hover{
+    transform: scale(1.05);
 }
-.description-detail{
-    font-size: 16px;
-    font-weight: 450;
-    line-height: 1.5rem;
-}
+/* Container con informacion adicional deel producto */

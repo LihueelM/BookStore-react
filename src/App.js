@@ -3,6 +3,7 @@ import './App.css';
 import ItemListContainer from './containers/itemListContainer/ItemListContainer'; 
 import ItemDetailContainer from './containers/itemDetailContainer/ItemDetailContainer'
 import Cart from './containers/cartContainer/Cart';
+import WelcomeContainer from './containers/welcomeContainer/WelcomeContainer'
 import {
   BrowserRouter,
   Routes,
@@ -17,7 +18,7 @@ function App() {
       <BrowserRouter>
         <NavBar />
         <Routes>
-          <Route path="/" element={<ItemListContainer />} />
+          <Route path="/" element={<WelcomeContainer />} />
           <Route path="category/:categoryId" element={<ItemListContainer />} />
           <Route path="detail/:productId" element={<ItemDetailContainer />} />
           <Route path="/cart" element={ <Cart /> }/>

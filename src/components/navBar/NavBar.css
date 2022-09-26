@@ -3,124 +3,85 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* Navbar */
+.navbar{
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ height: 65px;
+ padding: 0 300px 0 300px;
+ font-family: 'Oswald', sans-serif;
+ width: 100%;
+ justify-content: space-evenly;
+}
+/* Links de Navegacion */
+.links-navbar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+}
+.links-navbar li{
+  margin: 0 15px 0 15px;
+  width: 135px;
+  align-items: center;
+  text-align: center;
+  border-radius: 12px;
+  transition: 0.2s all ease;
+}
+.links-navbar li:hover{
+  background-color: #bf1111ce;
+}
+.links-navbar a{
+  text-decoration: none;
+  color: #000;
+  font-size: 21px;  
+  font-weight: 600;
+}
+.links-navbar a:hover{
+  color: #fff;
+}
+/* Links usuario */
+.links-extra{
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  list-style: none;
+  justify-content: flex-end;
+  width: 100%;
+}
+.links-extra li{
+ width: 135px;
+ text-align: center;
+ border-radius: 12px;
+ transition: 0.2s all ease;
+}
+.links-extra li:hover{
+  background-color: #bf1111ce;
+}
+.links-extra li a{
+  text-decoration: none;
+  color: #000;
+  font-size: 21px;  
+  font-weight: 600;
+}
+.links-extra li a:hover{
+  color: #fff;
+}
+/* Logo */
+.logo img{
+  width: 60px;
+  height: 50px;
+}
+.logo{
+  display: flex;
+  width: 260px  ;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.logo:hover{
+  background-color: #bf1111ce;
+  border-radius: 16px;
+}
 
- .navbar{
-    display: flex;
-    color: #fff;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 96px;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    background-color: #fff;
- }
- .brand a{
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin: .5rem;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
- }
- .brand a{
-   text-decoration: none;
-   color: #000;
- }
- .brand img{
-   width: 35px;
-   height: 35px;
-   margin: 0px 5px;
- }
- .navbar-links ul{
-    display: flex;  
-    align-items: center;  
- }
- .navbar-links li{
-   list-style: none;
-   width: 90px;
-   height: 36px;
-   text-align: center;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin: 4px;
-   height: 50px;
-   transition: .1s all ease-in-out;
- }
- .navbar-links li:hover{
-   border-bottom: 2px solid #000;
-
- }
- .navbar-links li a{
-   text-decoration: none;
-   color: #fff;
-   padding: 1rem;
-   display: block;
-   color: #000;
-   font-weight: 400;
-   font-size: 17px;
- }
- .toggle-btn{
-   position: absolute;
-   top: .75rem;
-   right: 1rem;
-   display: none;
-   flex-direction: column;
-   justify-content: space-between;
-   width: 30px;
-   height: 20px;
-   background-color: transparent;
-   border: none;
- }
- .toggle-btn .bar{
-   height: 4px;
-   width: 100%;
-   border-radius: 10px;    
- }
-
- @media (max-width: 768px){
-    .toggle-btn{
-         position: absolute;
-         top: .75rem;
-         right: 1rem;
-         display: flex;
-         flex-direction: column;
-         justify-content: space-between;
-         width: 30px;
-         height: 20px;
-     }
-     .navbar-links{
-         display: none; 
-         width: 100%;  
-         transition: 0.5 all ease;
-     }
-     .navbar-links-active{
-         display: block;
-         width: 100%;
-     }
-     .navbar-links-active ul{
-         display: flex;
-         list-style: none;      
-         width: 100%;
-         flex-direction: column;
-     }
-     .navbar-links-active li{
-         width: 100%;
-         padding: 6px 15px; 
-         background-color: #88939a;  
-     }
-     .navbar-links-active li a{
-      text-decoration: none;
-      color: #fff ;
-      font-weight: 600;
-      font-size: 18px;
-  }     
-     .navbar{
-         flex-direction: column;
-         align-items: center;
-     }
- }

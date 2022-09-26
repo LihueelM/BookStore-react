@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ItemList from "../../components/itemList/ItemList"
 import "../itemListContainer/ItemListContainer.css"
-import Banner from "../../components/banner/Banner"
 const ItemListContainer = () => {
 
     const [producto, setProducto] = useState([])
@@ -28,9 +27,7 @@ const ItemListContainer = () => {
     }, [categoryId])
     return(
         <>  
-            <div className="banner-container">
-                <Banner />
-            </div>            
+          
             <div className="main-container">                
                 <ItemList producto={producto}/>
             </div>

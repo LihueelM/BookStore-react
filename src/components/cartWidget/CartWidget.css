@@ -1,17 +1,83 @@
 .CartIcon{
     display: flex;
     width: 45px;
-    height: 35px;
+    height: 45px;
+    padding: 6px;
     justify-content: center;
     align-items: center;
     color: #000;
-    border-radius: 5px;
+    border-radius: 100%;
     margin: 0 5px;
     cursor: pointer;
 }
+.off{
+    display: none;
+}
 .CartIcon:hover{
+    background-color: #bf1111ce;
+    color: #fff;
+}
 
-    border-bottom: 2px solid #000;
+.cartOn{
+    z-index: 1;
+    width: 600px;
+    height: 100vh;
+    background-color: #000000ce;
+    position: fixed;
+    right: 0;
+    top: 0;
+    backdrop-filter: blur(10px);   
+}
+.container-aside-cart{
+    overflow-y: scroll;
+    height: 90%;
+}
+.item-cart-aside{
+    display: grid;
+    grid-auto-rows: 100px;
+    grid-template-columns: repeat(6 ,1fr);
+    height: 100px; 
+    align-items: center;
+    justify-content: center;   
+    color: #fff;
+    margin: 10px 0 10px 0;
+    background-color: #000;
+}
+.item-cart-aside img{
+    height: 85px;
+    width: 85px;
+    justify-self: center;
+    border-radius: 8px;
+}
+.item-cart-aside button{
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    border: none;
+    justify-self: center;
+}
+.item-cart-aside span{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    overflow: hidden;
+}
+.item-cart-aside button:hover{
+    background-color: aqua;
+}
+
+
+.cartOff{
+    display: none;
+}
+.container-icon-carrito{
+    display: flex;
+}
+.container-icon-carrito span{
+    position: relative;
+    width: 10px;
+    height: 10px;
+    font-size: 16px;
 }
 
 @media (max-width: 425px){
