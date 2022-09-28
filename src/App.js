@@ -11,8 +11,15 @@ import {
 } from "react-router-dom"; 
 import NotFound from './components/notFound/NotFound';
 import ShopProvider from './context/ShopProvider';
-
+/* import { useEffect } from 'react';
+import updateProducts from './services/saveProducts';
+ */
 function App() {
+  //Se encuentra desactivado ya que por cada vez que se ejecuta crea un nuevo array
+  /* useEffect( ()=> {
+    updateProducts()
+  }, []) */
+
   return (
     <ShopProvider>
       <BrowserRouter>
@@ -26,9 +33,6 @@ function App() {
         </Routes>
       </BrowserRouter>      
     </ShopProvider>
-    
-    
-    
   );
 }
 export default App;

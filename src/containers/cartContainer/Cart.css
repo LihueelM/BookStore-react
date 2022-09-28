@@ -20,3 +20,12 @@
 table{
     width: 80%;
 }
+/* Empty */
+
+.empty{
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

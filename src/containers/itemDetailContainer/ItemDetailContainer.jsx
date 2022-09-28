@@ -1,7 +1,9 @@
+import { doc, getDoc } from "firebase/firestore";
 import { useEffect } from "react";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import ItemDetail from "../../components/itemDetail/ItemDetail"
+import {db} from "../../Firebase/config"
 import './ItemDetailContainer.css'
 
 const ItemDetailContainer = () => {
@@ -13,9 +15,11 @@ const ItemDetailContainer = () => {
     useEffect(() => {
         const getDetalle = async () => {
             try {
-                const respuesta = await fetch(`https://fakestoreapi.com/products/${productId}`)
-                const data = await respuesta.json()
-                setDetalle(data);
+                const docRef = doc(db , 'products' , productId)
+                const docSnap = await getDoc(docRef)
+                docSnap.exists ? setDetalle({id:docSnap.id , ...docSnap.data()})
+                :
+                console.log("No hay archivos")
             } catch (error) {
                 console.log(error)
             }

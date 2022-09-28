@@ -1,10 +1,17 @@
 import { useContext } from "react";
+import { useNavigate } from "react-router-dom";
 import {Shop} from '../../context/ShopProvider'
 import './Cart.css'
 
 const Cart = () => {
     const {cart,removeItem} = useContext(Shop)
+    const navigate = useNavigate()
+
+    const returnHome = () => {
+        navigate('/')
+    }
     return(
+        cart.length ?
         <div className="container-cart-final">
             <table>
                 <thead>
@@ -39,6 +46,11 @@ const Cart = () => {
                     })
                 }
             </table>
+        </div>
+        :
+        <div className="empty">
+            <h2>No se encuentran items dentro del carrito</h2>
+            <button className="btn-return" onClick={returnHome}>Volver al inicio</button>
         </div>
     )
 }
