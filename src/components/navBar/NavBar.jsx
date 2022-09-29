@@ -15,11 +15,11 @@ const NavBar = () => {
         <nav className='navbar'>                                       
             <ul className="links-navbar">
                 <Link className="logo" to="/"><img src={Logo} alt="" />DIMENSIONAL BOOKS</Link>
-                <li><Link to="/">INICIO</Link></li>
-                <li><Link to="category/Fantasy">FANTASIA</Link></li>
-                <li><Link to="category/Clasic">CLASICOS</Link></li> 
-                <li><Link to="category/Adventure">AVENTURA</Link></li>
-                <li><Link to="category/Terror">TERROR</Link></li>                                                 
+                <Link to="/"><li>INICIO</li></Link>
+                <Link to="category/Fantasy"><li>FANTASIA</li></Link>
+                <Link to="category/Clasic"> <li>CLASICOS</li></Link> 
+                <Link to="category/Adventure"><li>AVENTURA</li></Link>
+                <Link to="category/Terror"><li>TERROR</li></Link>                                               
             </ul>                
             <ul className="links-extra">
                 <li><Link to="category/electronics">USUARIO</Link></li>
