@@ -8,7 +8,7 @@
     flex-direction: column;
     align-items: center;
     width: 240px;
-    height: 400px;
+    height: 420px;
     flex-wrap: wrap;
     margin: 32px;
     border-radius: 10px;
@@ -24,7 +24,7 @@
 }
 .img-card{
     width: 200px;
-    height: 240px;
+    height: 320px;
     border-radius: 12px;
 }
 .title-card{

@@ -80,8 +80,10 @@
     font-size: 16px;
 }
 
-@media (max-width: 425px){
-    .CartIcon {
-        margin: 0;
+@media (max-width: 768px){
+    .CartIcon{
+        color: #fff;
+        background-color: #000;
+        margin: 4px 4px 6px 4px;
     }
 }   

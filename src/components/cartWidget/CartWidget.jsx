@@ -5,10 +5,11 @@ import { useNavigate } from "react-router-dom";import './CartWidget.css'
 
 const CartWidget = () => {   
 
-    const {cart } = useContext(Shop)
+    const {cart} = useContext(Shop)
 /*     const [state ,setState] = useState(false)  
- */    const navigate = useNavigate()
-
+ */ const navigate = useNavigate()
+    const itemCart = cart.map((productos) => productos.quantity)
+    const totalCart =  itemCart.reduce((acc , i)=> acc + i  , 0)
     const redireccion = () => {
         navigate('/cart')
     }
@@ -29,8 +30,8 @@ const CartWidget = () => {
         <>              
             <div className="container-icon-carrito">
                 <HiOutlineShoppingCart className="CartIcon" onClick={redireccion}/>
-                <span className={cart.length ? '' : 'off'}>                 
-                    {cart.length}                
+                <span>{cart.length ? totalCart : ''}
+
                 </span>
             </div>                     
             
