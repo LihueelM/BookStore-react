@@ -4,11 +4,15 @@ import {Shop} from '../../context/ShopProvider'
 import './Cart.css'
 
 const Cart = () => {
-    const {cart,removeItem} = useContext(Shop)
+    const {cart,removeItem,total} = useContext(Shop)
     const navigate = useNavigate()
 
+    const precioFinal = total()
     const returnHome = () => {
         navigate('/')
+    }
+    const formulario = () => {        
+        navigate(('/formulario'))        
     }
     return(
         cart.length ?
@@ -46,6 +50,8 @@ const Cart = () => {
                     })
                 }
             </table>
+            <p>Precio Final: ${precioFinal}</p>
+            <button className="finalizar-compra" onClick={formulario}>Finalizar Compra</button>
         </div>
         :
         <div className="empty">

@@ -31,8 +31,12 @@ const ShopProvider = ({children}) => {
     
     const clearCarrito = () => {
         const nuevoCarrito = []
-        setCart(nuevoCarrito)     
-        
+        setCart(nuevoCarrito)        
+    }
+    const total = () => {
+        const precioFinal = cart.reduce((acc, producto) => acc += producto.quantity * producto.price ,0 ) 
+        console.log(precioFinal)
+        return precioFinal
     }
 
     const removeItem = (item) => {
@@ -48,7 +52,7 @@ const ShopProvider = ({children}) => {
     
 
     return(
-        <Shop.Provider value={{addItem,cart,clearCarrito,removeItem}}>
+        <Shop.Provider value={{addItem,cart,clearCarrito,removeItem,total}}>
             {children}
         </Shop.Provider>
     )

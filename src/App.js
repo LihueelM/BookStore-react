@@ -11,6 +11,7 @@ import {
 } from "react-router-dom"; 
 import NotFound from './components/notFound/NotFound';
 import ShopProvider from './context/ShopProvider';
+import Formulario from './containers/formularioContainer/Formulario';
 /* import { useEffect } from 'react';
 import updateProducts from './services/saveProducts';
  */
@@ -30,6 +31,7 @@ function App() {
           <Route path="detail/:productId" element={<ItemDetailContainer />} />
           <Route path="/cart" element={ <Cart /> }/>
           <Route path="*" element={<NotFound />} />
+          <Route path="/formulario" element={<Formulario />} />
         </Routes>
       </BrowserRouter>      
     </ShopProvider>

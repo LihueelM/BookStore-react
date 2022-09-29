@@ -1,0 +1,25 @@
+h2{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 0 0 32px;
+    font-family: 'Oswald', sans-serif;
+}
+form label{
+    font-size: 22px;
+    padding: 10px 0 10px 0 ;
+}
+form input{
+    height: 45px;
+    width: 200px;
+    border: none;
+    box-shadow: 1px 1px 6px 0px rgba(0,0,0,0.1) inset;
+}
+.submit{
+    margin: 12px 0 0 0;
+}
