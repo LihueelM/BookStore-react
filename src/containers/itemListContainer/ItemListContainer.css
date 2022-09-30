@@ -2,7 +2,7 @@
     margin-top: 3rem;
     display: flex;
     flex-wrap: wrap;
-    height: 100vh;
+    min-height: 100vh;
 }
 .banner-container{
     display: flex;
@@ -10,4 +10,9 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+}
+@media(max-width:768px){
+    .main-container{
+        justify-content: center;
+    }
 }

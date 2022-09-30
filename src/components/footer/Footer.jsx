@@ -9,7 +9,7 @@ const Footer = () => {
                 <h4>© 2022 Lihueel Mansilla</h4>
             </div>
             <div className="links">
-                <h3>Links</h3>
+                <h3>Redes</h3>
                 <ul>
                     <li>
                         <a href="https://www.instagram.com/lihumansilla/"><AiOutlineInstagram /></a>

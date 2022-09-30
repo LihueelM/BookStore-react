@@ -17,56 +17,77 @@
     background-color: #bf1111ce;
     color: #fff;
 }
-
+/* Inside del carrito */
 .cartOn{
     z-index: 1;
-    width: 600px;
-    height: 100vh;
+    max-width: 750px;
+    height: 100vh;    
     background-color: #000000ce;
     position: fixed;
     right: 0;
     top: 0;
     backdrop-filter: blur(10px);   
 }
+/* Titulo cart */
+.header-cart{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    background-color:#bf1111ce;
+    align-items: center;
+    width: 100%;
+}
+.close-btn{
+    color: #fff;
+    font-size: 32px;
+    cursor: pointer;
+}
+.cart-title {
+    font-size: 22px;
+    color: #fff;   
+    padding-right: 8px;
+}
+/* Contenedor de productos */
 .container-aside-cart{
     overflow-y: scroll;
-    height: 90%;
+    max-height: 85%;
+    min-width: 100%;
 }
-.item-cart-aside{
-    display: grid;
-    grid-auto-rows: 100px;
-    grid-template-columns: repeat(6 ,1fr);
-    height: 100px; 
-    align-items: center;
-    justify-content: center;   
+.grilla {    
+    height: 36px;
+}
+.grilla th{
+    padding: 6px 10px 6px 10px;
     color: #fff;
-    margin: 10px 0 10px 0;
-    background-color: #000;
+    font-size: 22px;
+    text-align: center;
 }
 .item-cart-aside img{
-    height: 85px;
-    width: 85px;
-    justify-self: center;
-    border-radius: 8px;
+    width: 65px;
 }
-.item-cart-aside button{
-    width: 30px;
-    height: 30px;
-    border-radius: 6px;
-    border: none;
-    justify-self: center;
+.item-cart-aside td{
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    padding: 0 8px 0 0;
 }
-.item-cart-aside span{
+.precio-final-cart{
+    font-size: 24px;
+    color: #fff;
+    margin-left: 8px;
+}
+.finalizar-cart{
+    width: 120px;
+    height: 32px;
+    margin: 5px;
+}
+.container-verificacion{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    height: 100px;
-    overflow: hidden;
+    align-items: center;
 }
-.item-cart-aside button:hover{
-    background-color: aqua;
-}
-
-
+/* icono widget */
 .cartOff{
     display: none;
 }

@@ -5,8 +5,7 @@
     align-items: center;
     text-align: center;
     font-family: 'Oswald', sans-serif;
-    height: 100vh;
-
+    min-height: 100vh;
 }
 .tr-item-row{
     background-color: #000;
@@ -19,18 +18,19 @@
 .tr-item td img{
     max-width: 60px;
 }
-table{
+.container-cart-final table{
     width: 80%;
 }
-.con
 /* Empty */
-
-.empty{
+.empty{    
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    align-items: center;    
+    min-height: 100vh;
 }
-
+.empty button{
+    height: 45px;
+    width: 220px;
+    font-size: 18px;
+}
 

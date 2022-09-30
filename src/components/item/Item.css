@@ -10,7 +10,7 @@
     width: 240px;
     height: 420px;
     flex-wrap: wrap;
-    margin: 32px;
+    margin: 28px;
     border-radius: 10px;
     backdrop-filter: blur(20px);
     justify-content: space-evenly;

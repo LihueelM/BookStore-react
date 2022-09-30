@@ -82,6 +82,8 @@
     display: block;
     width: 100%;
     z-index: 1;
+    position: static;
+    top: 0;
   }
   .links-navbar-open .categories{
     display: flex;
@@ -89,12 +91,20 @@
     align-items: flex-start;
     backdrop-filter: blur(12px);
     background-color: #000000ce;
+    width: 100%;
   }
   .option{
     color: #fff;
     padding: 4px;
-  }
+    min-width: 98%;
+  }  
   .navbar{
     flex-direction: column;
+    width: 100%;
+    align-content: center;
+    align-items: center;
+  }
+  .logo a{
+    max-width: 60px;
   }
 }
