@@ -4,12 +4,14 @@ import {Shop} from '../../context/ShopProvider'
 import NewOrder from '../../services/newOrder'
 import { db } from '../../Firebase/config';
 
-import { collection, addDoc } from "firebase/firestore";
+import { collection, addDoc, getDoc ,doc, updateDoc } from "firebase/firestore";
+import { useNavigate } from 'react-router-dom';
 
 
 const Formulario = () => {
-   const {cart,total} = useContext(Shop)
+   const {cart,total,clearCarrito} = useContext(Shop)
    const precioFinal = total()
+   const navigate = useNavigate()
    
    const [datos, setDatos] = useState({
     name: '',
@@ -32,8 +34,19 @@ const Formulario = () => {
     const docRef = await addDoc(collection(db, "orders"), orden)
     alert(`La operacion se realizo con exito. Numero de compra: ${docRef.id}`) 
 
+    cart.forEach( async (productoOrden) => {
+        const productoRef = doc(db, "products" , productoOrden.id)
+        const docSnap = await getDoc(productoRef)
+
+        await updateDoc(productoRef, {
+            stock: docSnap.data().stock - productoOrden.quantity
+        })
+        
+    });
     setDatos({})
+    clearCarrito()
     alert('Se realizo la compra correctamente')
+    navigate('/')
    }   
 
    return(

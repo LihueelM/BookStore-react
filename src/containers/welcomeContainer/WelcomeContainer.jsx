@@ -6,7 +6,7 @@ const WelcomeContainer = () => {
     return(
         <div className='welcome-container'>
             <div className='greetings'>
-                <h2>DIMENSIONAL BOOK'S</h2>
+                <h2>BOOKSTRAP</h2>
                 <h4>LIBERA TU IMAGINACION</h4>
             </div>
             <div className='triangulo'>
