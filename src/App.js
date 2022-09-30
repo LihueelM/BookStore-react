@@ -12,6 +12,7 @@ import {
 import NotFound from './components/notFound/NotFound';
 import ShopProvider from './context/ShopProvider';
 import Formulario from './containers/formularioContainer/Formulario';
+import Footer from './components/footer/Footer';
 /* import { useEffect } from 'react';
 import updateProducts from './services/saveProducts';
  */
@@ -33,6 +34,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
           <Route path="/formulario" element={<Formulario />} />
         </Routes>
+        <Footer />
       </BrowserRouter>      
     </ShopProvider>
   );

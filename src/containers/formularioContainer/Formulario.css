@@ -9,6 +9,7 @@ form{
     align-items: flex-start;
     padding: 20px 0 0 32px;
     font-family: 'Oswald', sans-serif;
+    height: 100vh;
 }
 form label{
     font-size: 22px;

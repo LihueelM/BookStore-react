@@ -2,10 +2,11 @@
     margin-top: 3rem;
     display: flex;  
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: center;
     font-family: 'Oswald', sans-serif;
+    height: 100vh;
+
 }
 .tr-item-row{
     background-color: #000;

@@ -5,7 +5,6 @@
     flex-direction: row;
     font-family: 'Oswald', sans-serif;
     align-items: center;
-    margin-top: 80px;
     justify-content: center;
 }
 /* Container con fotos e informacion comercial del producto */
@@ -17,16 +16,9 @@
 }
 .title-detail{
     font-size: 26px;    
-    padding: 12px 0 12px 0;
 }
 .img-detail{
     max-width: 300px;
-}
-.opciones{
-    display: flex;
-    flex-direction: column;
-    margin: 6px;
-    padding: 8px 0 8px 0;
 }
 .container-producto button{
     width: 200px;

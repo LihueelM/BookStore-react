@@ -29,8 +29,8 @@
 }
 
 body{
-
- background-color:#fff;
+  font-family: 'Oswald', sans-serif;
+  background-color:#fff;
 }
 
 @keyframes App-logo-spin {
