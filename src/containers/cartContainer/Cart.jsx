@@ -5,7 +5,7 @@ import './Cart.css'
 
 import useFirebase from "../../hooks/useFirebase";
 import Loader from "../../components/Loader/Loader";
-import Formulario from "../../components/Formulario.jsx/Formulario";
+import Formulario from "../../components/Formulario/Formulario";
 
 const Cart = () => {
     const {cart,removeItem,total} = useContext(Shop)
