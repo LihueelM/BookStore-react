@@ -22,14 +22,13 @@ const NavBar = () => {
             </button>                                 
             <div className={openBar ? 'links-navbar-open' : 'links-navbar'}>
                 <div className="categories">
-                    <Link className="option" to="/">INICIO</Link>
-                    <Link className="option" to="category/Fantasy">FANTASIA</Link>
-                    <Link className="option" to="category/Clasic">CLASICOS</Link> 
-                    <Link className="option" to="category/Adventure">AVENTURA</Link>
+                    <Link className="option" to="inicio">INICIO</Link>
+                    <Link className="option" to="category/Fantasia">FANTASIA</Link>
+                    <Link className="option" to="category/Clasicos">CLASICOS</Link> 
+                    <Link className="option" to="category/Aventura">AVENTURA</Link>
                     <Link className="option" to="category/Terror">TERROR</Link>  
                 </div>
                 <div className="categories">
-                    <Link className="option" to="category/electronics">USUARIO</Link>
                     <CartWidget/>                                         
                 </div>    
             </div>       

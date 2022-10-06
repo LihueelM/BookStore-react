@@ -1,59 +1,42 @@
 .container-item-detail{
     display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    flex-direction: row;
-    font-family: 'Oswald', sans-serif;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    flex-wrap: wrap; 
+    align-items: flex-start;
 }
-/* Container con fotos e informacion comercial del producto */
+/* Container del producto */
 .container-producto{
+    padding: 2rem 0 0 6rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; 
 }
-.title-detail{
-    font-size: 26px;    
+.title{
+    font-size: 38px;
+    color: #fff;
+    padding: 0 0 15px 0;
 }
 .img-detail{
-    max-width: 300px;
+    max-width: 300px ;    
 }
-.container-producto button{
-    width: 200px;
-    font-family: 'Oswald', sans-serif;
-    background-color:#FFD460;
+.price{
+    font-size: 30px;
+    color: #fff;
+    padding-top: 6px;
+}
+.stock-detail{
     font-size: 22px;
-    height: 36px;
-    border-radius: 12px;
-    border: none;
-    cursor: pointer;
-}
-.container-producto button:hover{
-    transform: scale(1.05);
-}
-.finalizar-compra-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 400px;
-    height: 500px;
-    border-radius: 12px;
+    color: #fff;
 }
 .finalizar-compra{
-    font-family: 'Oswald', sans-serif;
-    height: 36px;
-    width: 180px;
-    border-radius: 6px;
-    border: none;
-    font-size: 18px;
-    color: #fff;
-    background-color: #d61313;
-    cursor: pointer;
+    width: 300px;
+    height: 30px;   
 }
-.finalizar-compra:hover{
-    background-color: #a81010;    
+/* Container del ItemCount */
+
+.container-info{
+    padding: 2rem 0 0 6rem;
+    display: flex;
+    justify-content: center;
 }
-/* Container con informacion adicional deel producto */

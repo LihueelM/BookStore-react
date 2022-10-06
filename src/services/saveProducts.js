@@ -1,5 +1,5 @@
 import { addDoc , collection } from "firebase/firestore";
-import { db } from "../Firebase/config";
+import { db } from "../firebase/config";
 
 const updateProducts = async () => {
 

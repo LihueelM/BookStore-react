@@ -19,8 +19,7 @@ const ShopProvider = ({children}) => {
                 return product
             })
             console.log(carritoModificado)
-        }else{
-            
+        }else{            
             const nuevoCarrito = [...cart, item]            
             setCart(nuevoCarrito)
         } 
@@ -38,6 +37,11 @@ const ShopProvider = ({children}) => {
         console.log(precioFinal)
         return precioFinal
     }
+    const totalWidget = () => {
+        const itemCart = cart.map((productos) => productos.quantity)
+        const totalCart = itemCart.reduce((acc, i) => acc +i , 0)
+        return totalCart
+    }
 
     const removeItem = (item) => {
         const coincidencia = isInCart(item.id)
@@ -52,7 +56,7 @@ const ShopProvider = ({children}) => {
     
 
     return(
-        <Shop.Provider value={{addItem,cart,clearCarrito,removeItem,total}}>
+        <Shop.Provider value={{addItem,cart,clearCarrito,removeItem,total,totalWidget}}>
             {children}
         </Shop.Provider>
     )

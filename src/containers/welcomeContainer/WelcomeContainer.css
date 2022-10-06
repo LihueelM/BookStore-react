@@ -1,45 +1,53 @@
 .welcome-container{
     min-height: 100vh;
-    margin-top: -65px;
-    padding: 0 65px 0 65px;
-    font-family: 'Oswald', sans-serif;
-    overflow: hidden;
-    display: block;
+    color: #fff;    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0 12rem 0 12rem;
 }
 .greetings{
-    position: relative;
-    font-size: 52px;
-    top: 10rem;
-}
-.triangulo{
-    background-color: #D61313;
-    height: 180px;
-    width: 220px;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
     align-items: center;
-    justify-content: center;
-    text-align: center;
+    padding-top: 4rem;
+}
+.greetings h2{
+    font-size: 60px;
+    width: 50%;
+}
+.greetings img{
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    position: relative;
-    left: 46rem;    
+    background-color: #7a1117;
+    width: 300px;   
+    height: 300px;
+    padding: 7rem 5rem 2rem 5rem;
 }
-.triangulo img{
-    width: 100px;
-    position: relative;
-    top: 26px;
+.quienes-somos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 6rem;
 }
-.quienes-somos h5{
-    font-size: 26px;
-    margin-top: 16px;
-    width: 600px;
+.quienes-somos h5{    
+    width: 60%;
+    font-size: 18px;
+    font-weight: 400;
 }
-.fondo-imagen{
-    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-    background-color: #f7f31bc2;
-    width: 1600px;
-    height: 1400px;
-    position: relative;
-    bottom: 22rem;
-    left: 46rem;    
+.btn-comprar-ahora{
+    margin-top: 30px;
+    height: 60px;
+    width: 160px;
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+    cursor: pointer;
+    border-radius: 16px;
 }
-
+.btn-comprar-ahora:hover{
+    background-color: #7a1117;
+    color: #fff;
+    border: none;
+}

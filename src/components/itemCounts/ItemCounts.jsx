@@ -1,12 +1,27 @@
 import { useState , Fragment } from "react";
+import { HiMinusCircle, HiPlusCircle } from "react-icons/hi";
 import './ItemCounts.css'
+
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
+
 
 const ItemCounts = ({stock ,  initial , onAdd}) => {
 
+    const MySwal = withReactContent(Swal);
     const [count , setCount] = useState(initial);
-
+    
     const addItem = () => {
-        count < stock ? setCount(count+1) : alert('No hay mas items disponibles');
+        count < stock ? setCount(count+1) 
+        :
+        MySwal.fire({
+            icon: 'warning',
+            position:'top',
+            title: <p>No hay mas productos en stock</p>,
+            onOpen: () => {
+              setTimeout(() => MySwal.clickConfirm(), 2500);
+            }
+        })  ;
     }
     const decrementItem = () => {
         count > 1 ? setCount(count-1) : console.log('No hay stock')
@@ -15,12 +30,12 @@ const ItemCounts = ({stock ,  initial , onAdd}) => {
     return(
         <Fragment>
             <div className="container-item-counts">
-                <div className="container-btn">
-                    <p className="amount-item">Cantidad: {count} unidad</p>
-                    <button className="btn-item-counts" onClick={decrementItem}>-</button>
-                    <button className="btn-item-counts" onClick={addItem}>+</button>
+                <p className="amount-item">UNIDADES SELECCIONADAS: {count}</p>
+                <div className="container-btn">          
+                    <i onClick={addItem}><HiPlusCircle className="i-btn"/></i>          
+                    <i onClick={decrementItem}><HiMinusCircle className="i-btn" /></i>
                 </div>  
-                <button className="btn-carrito" onClick={() => onAdd(count)}>Agregar al carrito</button>              
+                <button className="btn-carrito" onClick={() => onAdd(count)}>ACEPTAR</button>              
             </div>
         </Fragment>
     )

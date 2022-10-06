@@ -1,47 +1,33 @@
 .container-item-counts{
     display: flex;
     flex-direction: column;
+    width: 300px;
+    padding-bottom: 2rem;
+    align-items: flex-start;
     align-items: center;
-    justify-content: center;
-    max-width: 300px;
-    max-height: 450px;
-    padding: 0 25px 0 25px;
 }
-.amount-item{
-    font-size: 18px;
-    font-weight: 500;
-}
-.container-btn{
-    width: 180px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-.btn-item-counts{
+.container-btn{    
     width: 100%;
+    display: flex; 
+    justify-content: center;  
+}
+.i-btn{
+    width: 40px;
     height: 40px;
-    margin: 16px 0 16px 0;
-    background-color: #D07000;
     color: #fff;
     border: none;
-    border-radius: 8px;
-    transition: 0.2s all ease;
+    cursor: pointer;
 }
-.btn-item-counts:hover{
-    background-color: #C55300;
+.i-btn:active{
+    transform: scale(1.15);
+}
+.amount-item{
+    color: #fff;
+    font-size: 24px;
 }
 .btn-carrito{
-    width: 100%;
-    height: 40px;
-    margin: 16px 0 16px 0;
-    background-color: #FFD460;
-    border-radius: 8px;
-    border: none;
-    transition: 0.2s all ease;
+    width: 300px;
+    height: 30px;
+    font-family: 'Oswald', sans-serif;
     font-size: 18px;
-    font-weight: 500;
-}
-.btn-carrito:hover{
-    background-color: #f1bf32;
 }

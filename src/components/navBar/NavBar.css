@@ -8,6 +8,12 @@
   flex-direction: row;
   height: 65px;
   font-family: 'Oswald', sans-serif;  
+  padding: 0 45px 0 45px;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px);
 }
 .links-navbar{
   display: flex;
@@ -24,7 +30,7 @@
   margin: 0 6px 0 6px;
   font-size: 20px;
   text-decoration: none;
-  color: #000;
+  color: #fff;
   font-weight: 600;
   max-width: 140px ;
   border-radius: 10px;
@@ -33,7 +39,7 @@
 }
 .option:hover{
   background-color: #D61313;
-  color: #fff;
+  color: #000;
 }
 .logo{
   display: flex;
@@ -49,7 +55,7 @@
   font-size: 20px;
   font-weight: 600;
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
 .toggle-btn{
   position: absolute;

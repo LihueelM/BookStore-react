@@ -3,13 +3,15 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import ItemDetail from "../../components/itemDetail/ItemDetail"
-import {db} from "../../Firebase/config"
-import './ItemDetailContainer.css'
+import Loader from "../../components/Loader/Loader";
+import {db} from "../../firebase/config"
+import useFirebase from "../../hooks/useFirebase";
+
 
 const ItemDetailContainer = () => {
-    const [detalle, setDetalle] = useState({})
+    const [detalle, setDetalle] = useState({})    
     console.log(detalle)
-
+    const [loading] = useFirebase()
     const {productId} = useParams()
 
     useEffect(() => {
@@ -30,8 +32,15 @@ const ItemDetailContainer = () => {
 
     return(
         <div className="main-container-detail">
-            <ItemDetail producto={detalle} />
+            {
+                loading ? 
+                    <Loader />
+                    :                    
+                    <ItemDetail producto={detalle} />                    
+            }
+
         </div>
+        
         
     )
 }

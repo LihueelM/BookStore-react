@@ -2,7 +2,7 @@
     {   
         "id":1,
         "title": "Elantris" ,
-        "category":"Fantasy",
+        "category":"Fantasia",
         "price":7800,
         "image":"https://http2.mlstatic.com/D_NQ_NP_2X_719824-MLA49364153381_032022-F.webp",
         "stock":16
@@ -10,7 +10,7 @@
     {   
         "id":2,
         "title": "El archivo de las tormentas: El camino de loss reyes" ,
-        "category":"Fantasy",
+        "category":"Fantasia",
         "price":10200,
         "image":"https://http2.mlstatic.com/D_NQ_NP_717379-MLA47875813263_102021-O.webp",
         "stock":8
@@ -18,7 +18,7 @@
     {   
         "id":3,
         "title": "La rueda del tiempo - El ojo del mundo" ,
-        "category":"Fantasy",
+        "category":"Fantasia",
         "price":8600,
         "image":"https://http2.mlstatic.com/D_NQ_NP_645520-MLA46942489564_082021-O.webp",
         "stock":6
@@ -26,7 +26,7 @@
     {   
         "id":4,
         "title": "Harry potter: La piedra filosofal" ,
-        "category":"Fantasy",
+        "category":"Fantasia",
         "price":6800,
         "image":"https://http2.mlstatic.com/D_NQ_NP_885399-MLA42274904648_062020-O.webp",
         "stock":20
@@ -34,7 +34,7 @@
     {   
         "id":5,
         "title": "El juguete rabioso" ,
-        "category":"Clasic",
+        "category":"Clasicos",
         "price":1500,
         "image":"https://http2.mlstatic.com/D_NQ_NP_964576-MLA32159922131_092019-O.webp",
         "stock":18
@@ -42,7 +42,7 @@
     {   
         "id":6,
         "title": "Rebelion en la granja" ,
-        "category":"Clasic",
+        "category":"Clasicos",
         "price":1500,
         "image":"https://http2.mlstatic.com/D_NQ_NP_836226-MLA27696041534_072018-O.webp",
         "stock":18
@@ -50,7 +50,7 @@
     {   
         "id":7,
         "title": "Los 7 locos" ,
-        "category":"Clasic",
+        "category":"Clasicos",
         "price":1500,
         "image":"https://http2.mlstatic.com/D_NQ_NP_633029-MLA46994293618_082021-O.webp",
         "stock":18
@@ -58,7 +58,7 @@
     {   
         "id":8,
         "title": "El lobo estepario" ,
-        "category":"Clasic",
+        "category":"Clasicos",
         "price":1500,
         "image":"https://http2.mlstatic.com/D_NQ_NP_745000-MLA51165853001_082022-O.webp",
         "stock":18
@@ -66,7 +66,7 @@
     {   
         "id":9,
         "title": "Veinte mil leguas de viaje submarino" ,
-        "category":"Adventure",
+        "category":"Aventura",
         "price":7800,
         "image":"https://http2.mlstatic.com/D_NQ_NP_949104-MLA48410451534_122021-O.webp",
         "stock":16
@@ -74,7 +74,7 @@
     {   
         "id":10,
         "title": "La isla del tesoro" ,
-        "category":"Adventure",
+        "category":"Aventura",
         "price":7800,
         "image":"https://http2.mlstatic.com/D_NQ_NP_609797-MLA45345920660_032021-O.webp",
         "stock":16
@@ -82,7 +82,7 @@
     {   
         "id":11,
         "title": "Moby dick" ,
-        "category":"Adventure",
+        "category":"Aventura",
         "price":7800,
         "image":"https://http2.mlstatic.com/D_NQ_NP_718306-MLA45345923563_032021-O.webp",
         "stock":16
@@ -90,7 +90,7 @@
     {   
         "id":12,
         "title": "Robinson crusoe" ,
-        "category":"Adventure",
+        "category":"Aventura",
         "price":7800,
         "image":"https://http2.mlstatic.com/D_NQ_NP_834640-MLA32043848221_092019-O.webp",
         "stock":16

@@ -30,14 +30,11 @@
 
 body{
   font-family: 'Oswald', sans-serif;
-  background-color:#fff;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  background: url('./images/backgroud-red.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  backdrop-filter: blur(30px);
+  overflow-x: hidden;
 }

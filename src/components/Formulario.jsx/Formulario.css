@@ -1,0 +1,46 @@
+.formulario{
+    width: 460px;
+    background-color: rgba(100, 100, 100, 0.3);
+    backdrop-filter: blurs(16px);
+    height: 600px;    
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+h2{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    margin-top: 16px ;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 0 0 32px;
+    font-family: 'Oswald', sans-serif;
+    width: 100%;    
+}
+form label{
+    font-size: 22px;
+    padding: 10px 0 10px 0 ;
+}
+form input{
+    height: 50px;
+    width: 95%;
+    border: none;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin: 16px 0 16px 0;
+    box-shadow: 1px 1px 6px 0px rgba(0,0,0,0.1) inset;
+}
+.enviar-datos-form{
+    width: 95%;
+    height: 50px;
+    margin: 16px 0 16px 0;
+    border: none;
+    border-radius: 12px;
+    font-size: 28px;
+    font-family: 'Oswald', sans-serif;
+}
