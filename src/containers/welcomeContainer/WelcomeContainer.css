@@ -4,7 +4,6 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    padding: 0 12rem 0 12rem;
 }
 .greetings{
     display: flex;
@@ -12,6 +11,7 @@
     flex-wrap: wrap;
     width: 100%;
     align-items: center;
+    justify-content: space-evenly;
     padding-top: 4rem;
 }
 .greetings h2{
@@ -21,15 +21,16 @@
 .greetings img{
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     background-color: #7a1117;
-    width: 300px;   
-    height: 300px;
+    max-width: 300px;   
+    max-height: 300px;
     padding: 7rem 5rem 2rem 5rem;
 }
 .quienes-somos{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    padding-top: 6rem;
+    padding-top: 3rem;
+    align-items: center;
 }
 .quienes-somos h5{    
     width: 60%;
@@ -40,7 +41,7 @@
     margin-top: 30px;
     height: 60px;
     width: 160px;
-    padding: 10px;
+    margin-bottom: 20px;
     font-size: 18px;
     font-family: 'Oswald', sans-serif;
     cursor: pointer;
@@ -50,4 +51,37 @@
     background-color: #7a1117;
     color: #fff;
     border: none;
+}
+
+@media(max-width:768px){
+    .welcome-container{
+              padding: 0 2rem 0 2rem; 
+    }
+    .greetings{
+        align-items: center;
+        justify-content: center;
+    }
+    .greetings h2{
+        padding-bottom: 2rem;
+        font-size: 32px;
+        width: 100%;
+        text-align: center;
+    }
+    .greetings img{
+        width: 220px;
+        height: 220px;
+    }
+    .quienes-somos{
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .quienes-somos h5{    
+        width: 100%;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .btn-comprar-ahora{
+        margin-bottom: 16px;
+    }
 }

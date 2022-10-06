@@ -139,4 +139,9 @@
         background-color: #000;
         margin: 4px 4px 6px 4px;
     }
+    .cartOn{
+        position: fixed;
+        top: -425%;
+        left: 48%;
+    }
 }   

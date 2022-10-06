@@ -21,7 +21,7 @@ const WelcomeContainer = () => {
                 <div className='welcome-container'>
                 <div className='greetings'>
                     <h2>ENCONTRA LA AVENTURA QUE ESTAS NECESITANDO</h2>
-                    <img src={Triangulo} alt="libros" className='triangulo' />
+                    <img src={Triangulo} alt="libros" />
                 </div>
                 <div className='quienes-somos'>
                     <h5>
