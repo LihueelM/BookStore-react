@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useParams } from "react-router-dom";
 import ItemDetail from "../../components/itemDetail/ItemDetail"
 import Loader from "../../components/Loader/Loader";
-import {db} from "../../firebase/config"
+import {db} from "../../firebase/config.js"
 import useFirebase from "../../hooks/useFirebase";
 
 
@@ -38,7 +38,6 @@ const ItemDetailContainer = () => {
                     :                    
                     <ItemDetail producto={detalle} />                    
             }
-
         </div>
         
         
